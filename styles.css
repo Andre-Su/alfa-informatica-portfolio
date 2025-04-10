@@ -1,9 +1,11 @@
 /* Variáveis de cores e fontes */
 :root {
-    --primary-color: #5872c7;
-    --secondary-color: #05caf1;
-    --background-color: #3c4d85;
+    --primary-color: #4e65b1;
+    --secondary-color: #35ddff;
+    --background-color: #061547;
+    --background-color-alt: #142d80;
     --text-color: #f1f1f1;
+    --text-color-alt: #a3f4ff;
     --font-family: 'Arial', sans-serif;
     --header-height: 10vh;
 }
@@ -14,13 +16,33 @@
     padding: 0;
     box-sizing: border-box;
 }
+html {
+    background-color: var(--background-color-alt);
+}
 
 body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     font-family: var(--font-family);
     color: var(--text-color);
-    background-color: var(--background-color);
+    background: linear-gradient(140deg, var(--primary-color), var(--background-color-alt), var(--background-color));
     line-height: 1.6;
     min-height: 100vh;
+}
+
+a {
+    color: var(--text-color-alt);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--text-color);
+}
+
+hr {
+    color: var(--secondary-color);
 }
 
 /* Estilo do header */
@@ -33,6 +55,15 @@ header {
     justify-content: center;
 }
 
+header nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
 header nav ul {
     list-style: none;
     display: flex;
@@ -40,7 +71,7 @@ header nav ul {
 }
 
 header nav ul li a {
-    color: #fff;
+    color: var(--text-color-alt);
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
@@ -54,6 +85,7 @@ header nav ul li a:hover {
 main {
     min-height: 80vh;
     padding: 20px;
+    margin: 0 10vw;
 }
 
 section {
@@ -69,10 +101,32 @@ section p {
     margin-bottom: 10px;
 }
 
+.section-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-evenly;
+}
+
+.section-list-item, .section-list-item a {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+i img{
+    background: var(--text-color);
+    padding: .25rem;
+    margin: 0 1vw;
+    border-radius: .5vw;
+    width: 3vw;
+}
+
 /* Estilo do footer */
 footer {    
     min-height: 10vh;
-    background: var(--secondary-color);
+    background: var(--background-color);
+    border-top-right-radius: 2vw;
+    border-top-left-radius: 2vw;
     color: #fff;
     text-align: center;
     padding: 10px 0;
@@ -81,11 +135,22 @@ footer {
 /* Responsividade */
 @media (max-width: 768px) {
     header nav ul {
-        flex-direction: column;
         gap: 10px;
     }
 
     main {
         padding: 10px;
     }
+
 }
+
+/* Containers */
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    flex-direction: column;
+}
+
