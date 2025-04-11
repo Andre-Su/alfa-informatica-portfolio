@@ -30,6 +30,8 @@ body {
     background: linear-gradient(140deg, var(--primary-color), var(--background-color-alt), var(--background-color));
     line-height: 1.6;
     min-height: 100vh;
+    text-overflow: clip;
+    text-align: justify;
 }
 
 a {
