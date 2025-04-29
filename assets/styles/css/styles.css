@@ -1,221 +1,211 @@
-/* Variáveis de cores e fontes */
 :root {
-    --primary-color: #4e65b1;
-    --secondary-color: #35ddff;
-    --background-color: #061547;
-    --background-color-alt: #142d80;
-    --text-color: #f1f1f1;
-    --text-color-alt: #a3f4ff;
-    --font-family: 'Arial', sans-serif;
-    --header-height: 10vh;
+  --primary-color: #4e65b1;
+  --secondary-color: #35ddff;
+  --background-color: #061547;
+  --background-color-alt: #142d80;
+  --text-color: #f1f1f1;
+  --text-color-alt: #a3f4ff;
+  --font-family: "Arial", sans-serif;
+  --header-height: 10vh;
 }
 
-/* Reset básico */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
 html {
-    background-color: var(--background-color-alt);
+  background-color: var(--background-color-alt);
 }
-
-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-family: var(--font-family);
-    color: var(--text-color);
-    font-size: 1rem;
-    background: linear-gradient(140deg, var(--primary-color), var(--background-color-alt), var(--background-color));
-    line-height: 1.6;
-    min-height: 100vh;
+html body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: var(--font-family);
+  color: var(--text-color);
+  font-size: 1rem;
+  background: linear-gradient(140deg, var(--primary-color), var(--background-color-alt), var(--background-color));
+  line-height: 1.6;
+  min-height: 100vh;
 }
-
-p {
-    text-overflow: clip;
-    text-align: justify;
+html body p {
+  text-overflow: clip;
+  text-align: justify;
 }
-
-a {
-    color: var(--text-color-alt);
-    text-decoration: none;
-    transition: color 0.3s ease;
+html body a {
+  color: var(--text-color-alt);
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
-
-a:hover {
-    color: var(--text-color);
+html body a:hover {
+  color: var(--text-color);
 }
-
-hr {
-    color: var(--secondary-color);
-    border-width: 2px;
-    border-radius: 10%;
+html body hr {
+  color: var(--secondary-color);
+  border-width: 2px;
+  border-radius: 10%;
 }
-
-/* Estilo do header */
-header {
-    background: linear-gradient(70deg, var(--primary-color), var(--background-color));
-    color: #fff;
-    width: 100vw;
-    min-height: var(--header-height);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    justify-content: space-between;
-    padding: 0 20px;
-    border-bottom: var(--secondary-color) 2px solid;
-    border-right: var(--secondary-color) 2px solid;
-    border-bottom-right-radius: 2vw;
+html body header {
+  background: linear-gradient(70deg, var(--primary-color), var(--background-color));
+  color: #fff;
+  width: 100vw;
+  min-height: var(--header-height);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  border-bottom: var(--secondary-color) 2px solid;
+  border-right: var(--secondary-color) 2px solid;
+  border-bottom-right-radius: 2vw;
 }
-
-header nav {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 10px;
+html body header nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
 }
-
-header nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
+html body header nav ul.menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
 }
-
-header nav ul li a {
-    color: var(--text-color-alt);
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
+html body header nav ul.menu li {
+  display: flex;
 }
-
-header nav ul li a:hover {
-    color: #000;
+html body header nav ul.menu li a {
+  width: 100%;
+  color: var(--text-color-alt);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
 }
-
-/* Seções principais */
-main {
-    min-height: 80vh;
-    padding: 20px;
-    margin: 0 10vw;
+html body header nav ul.menu li a:hover {
+  background-color: var(--background-color-alt);
+  color: #000;
 }
-
-section {
-    margin-bottom: 40px;
+html body header nav ul.menu .menu-selected {
+  background-color: var(--background-color-alt);
+  padding: 1px 5px;
+  border-radius: 8px;
+  border: 1px solid var(--secondary-color);
 }
-
-section h1, section h2, section h3 {
-    color: var(--secondary-color);
-    margin-bottom: 10px;
+html body main {
+  min-height: 80vh;
+  padding: 20px;
+  margin: 0 10vw;
 }
-
-section p {
-    margin-bottom: 10px;
+html body main section {
+  margin-bottom: 40px;
 }
-
-.section-list {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
+html body main section h1, html body main section h2, html body main section h3 {
+  color: var(--secondary-color);
+  margin-bottom: 10px;
 }
-
-.section-list-item, .section-list-item a {
-    display: flex;
-    align-items: center;
-    list-style: none;
+html body main section p {
+  margin-bottom: 10px;
 }
-
-i img{
-    background: var(--text-color);
-    padding: .2rem;
-    margin: 0 1vw;
-    border-radius: .5vw;
-    width: 4vw;
+html body main section .section-list ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
 }
-
-/* Estilo do footer */
-footer {    
-    display: flex;
-    min-height: 10vh;
-    background: var(--background-color);
-    border-top-right-radius: 2vw;
-    border-top-left-radius: 2vw;
-    color: #fff;
-    text-align: center;
-    justify-content: center;
-    justify-items: center;
-    padding: 10px 0;
+html body main section .section-list ul li {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 5px;
+  border-radius: 8px;
+  border: 1px solid var(--secondary-color);
+  background-color: var(--background-color-alt);
 }
-
-/* Estilo do botão do menu */
-.menu-toggle {
-    display: none;
-    background: none;
-    border: none;
-    font-size: 2rem;
-    color: var(--text-color);
-    cursor: pointer;
+html body .flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+  flex-direction: column;
 }
-
-/* Sistema responsivo */
+html body .flex-center .section-list-item {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 5px;
+}
+html body i img {
+  background: var(--text-color);
+  padding: 0.2rem;
+  margin: 0;
+  border-radius: 0.5vw;
+  width: 4vw;
+}
+html body footer {
+  display: flex;
+  min-height: 10vh;
+  background: var(--background-color);
+  border-top-right-radius: 2vw;
+  border-top-left-radius: 2vw;
+  color: #fff;
+  text-align: center;
+  justify-content: center;
+  justify-items: center;
+  padding: 10px 0;
+}
+html .menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: var(--text-color);
+  cursor: pointer;
+}
 
 @media (max-width: 768px) {
-    body {
-        font-size: 1.15rem;
-    }
-
-    main {
-        padding: 10px;
-        margin: 0 5vw;
-    }
-
-    .menu {
-        display: none;
-        flex-direction: column;
-        background: var(--primary-color);
-        position: absolute;
-        top: var(--header-height);
-        right: 0;
-        width: 100%;
-        padding: 10px 0;
-    }
-
-    .menu-item {
-        text-align: center;
-        padding: 10px 0;
-    }
-
-    .menu-toggle {
-        display: block;
-    }
-
-    .menu.active {
-        display: flex;
-    }
-
-    i img{
-        background: var(--text-color);
-        padding: .25rem;
-        margin: 0 2vw;
-        border-radius: 1vw;
-        width: 7vw;
-    }
-
-    .section-list {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-    }
-
-}
-
-/* Containers */
-
-.flex-center {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 20px 0;
+  html body {
+    font-size: 1.15rem;
+  }
+  html body header nav ul.menu {
+    display: none;
     flex-direction: column;
+    background: var(--primary-color);
+    position: absolute;
+    top: var(--header-height);
+    right: 0;
+    width: 100%;
+    padding: 10px 0;
+  }
+  html body header nav .menu-item {
+    text-align: center;
+    padding: 10px 0;
+  }
+  html body header nav .section-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  html body header nav .menu-toggle {
+    font-size: 3rem;
+    display: block;
+    padding: 0;
+  }
+  html body header nav ul.menu.active {
+    display: flex;
+  }
+  html body main {
+    padding: 10px;
+    margin: 0 5vw;
+  }
+  html body main i img {
+    background: var(--text-color);
+    padding: 0.15rem;
+    margin: 0;
+    border-radius: 1vw;
+    width: 7vw;
+  }
 }
 
+/*# sourceMappingURL=styles.css.map */
