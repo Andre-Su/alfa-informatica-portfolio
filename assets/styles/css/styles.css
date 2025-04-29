@@ -1,14 +1,3 @@
-:root {
-  --primary-color: #4e65b1;
-  --secondary-color: #35ddff;
-  --background-color: #333366;
-  --background-color-alt: #272757;
-  --text-color: #f1f1f1;
-  --text-color-alt: #a3f4ff;
-  --font-family: "Open Sans", sans-serif;
-  --header-height: 10vh;
-}
-
 @font-face {
   font-family: "Baskervville";
   src: url("./assets/fonts/Baskervville/Baskervville-Regular.ttf") format("truetype");
@@ -21,6 +10,17 @@
   font-weight: normal;
   font-style: normal;
 }
+:root {
+  --primary-color: #4e65b1;
+  --secondary-color: #35ddff;
+  --background-color: #333366;
+  --background-color-alt: #272757;
+  --text-color: #f1f1f1;
+  --text-color-alt: #a3f4ff;
+  --font-family: "Open Sans", sans-serif;
+  --header-height: 10vh;
+}
+
 * {
   margin: 0;
   padding: 0;
