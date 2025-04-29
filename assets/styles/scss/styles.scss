@@ -5,8 +5,22 @@
     --background-color-alt: #272757;
     --text-color: #f1f1f1;
     --text-color-alt: #a3f4ff;
-    --font-family: 'Arial', sans-serif;
+    --font-family: 'Open Sans', sans-serif;
     --header-height: 10vh;
+}
+
+@font-face {
+    font-family: 'Baskervville';
+    src: url('/assets/fonts/Baskervville/Baskervville-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('/assets/fonts/OpenSans/OpenSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 * {
@@ -33,6 +47,11 @@ background-color: var(--background-color-alt);
         );
         line-height: 1.6;
         min-height: 100vh;
+
+        h1, h2, h3 {
+            font-family: 'Baskervville';
+            margin-bottom: 10px;
+        }
         
         p {
             text-overflow: clip;
