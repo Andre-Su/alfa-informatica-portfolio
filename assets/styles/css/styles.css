@@ -1,12 +1,12 @@
 @font-face {
   font-family: "Baskervville";
-  src: url("./assets/fonts/Baskervville/Baskervville-Regular.ttf") format("truetype");
+  src: url("./../../fonts/Baskervville/Baskervville-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "Open Sans";
-  src: url("./assets/fonts/OpenSans/OpenSans-Regular.ttf") format("truetype");
+  src: url("./../../fonts/OpenSans/OpenSans-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -40,6 +40,7 @@ html body {
   background: linear-gradient(140deg, var(--primary-color), var(--background-color-alt), var(--background-color));
   line-height: 1.6;
   min-height: 100vh;
+  transition: 0.2s ease;
 }
 html body h1, html body h2, html body h3 {
   font-family: "Baskervville";
@@ -56,6 +57,7 @@ html body a {
 }
 html body a:hover {
   color: var(--text-color);
+  text-decoration: underline;
 }
 html body hr {
   color: var(--secondary-color);
@@ -96,15 +98,14 @@ html body header nav ul.menu li a {
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s ease;
+  padding: 1px 5px;
+  border-radius: 8px;
 }
 html body header nav ul.menu li a:hover {
   background-color: var(--background-color-alt);
-  color: #000;
 }
 html body header nav ul.menu .menu-selected {
   background-color: var(--background-color-alt);
-  padding: 1px 5px;
-  border-radius: 8px;
   border: 1px solid var(--secondary-color);
 }
 html body main {

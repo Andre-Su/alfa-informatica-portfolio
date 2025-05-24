@@ -47,6 +47,7 @@ background-color: var(--background-color-alt);
         );
         line-height: 1.6;
         min-height: 100vh;
+        transition: 0.2s ease;
 
         h1, h2, h3 {
             font-family: 'Baskervville';
@@ -66,6 +67,7 @@ background-color: var(--background-color-alt);
 
         a:hover {
             color: var(--text-color);
+            text-decoration: underline;
         }
 
         hr {
@@ -107,17 +109,16 @@ background-color: var(--background-color-alt);
                             text-decoration: none;
                             font-weight: bold;
                             transition: color 0.3s ease;
+                            padding: 1px 5px;
+                            border-radius: 8px;
                         }
                         
                         a:hover {
                             background-color: var(--background-color-alt);
-                            color: #000;
                         }
                     }
                     .menu-selected {
                         background-color: var(--background-color-alt);
-                        padding: 1px 5px;
-                        border-radius: 8px;
                         border: 1px solid var(--secondary-color);
                     }
                 }
