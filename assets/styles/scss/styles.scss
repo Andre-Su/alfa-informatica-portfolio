@@ -84,7 +84,6 @@ background-color: var(--background-color-alt);
             min-height: var(--header-height);
             display: flex;
             align-items: center;
-            justify-content: center;
             justify-content: space-between;
             padding: 0 20px;
             border-bottom: var(--secondary-color) 2px solid;
@@ -152,12 +151,20 @@ background-color: var(--background-color-alt);
                         li {
                             padding: 15px;
                             display: flex;
+                            flex-grow: 1;
                             align-items: center;
                             list-style: none;
-                            gap: 5px;
+                            gap: 10px;
                             border-radius: 8px;
                             border: 1px solid var(--secondary-color);
                             background-color: var(--background-color-alt);
+                            
+                            div {
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                gap: 10px;
+                            }
                         }
                     }
                 }
