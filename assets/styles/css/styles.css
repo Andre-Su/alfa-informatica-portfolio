@@ -42,6 +42,11 @@ html body {
   min-height: 100vh;
   transition: 0.2s ease;
 }
+@media (max-width: 768px) {
+  html body {
+    font-size: 1.15rem;
+  }
+}
 html body h1, html body h2, html body h3 {
   font-family: "Baskervville";
   margin-bottom: 10px;
@@ -107,6 +112,43 @@ html body header nav ul.menu .menu-selected {
   background-color: var(--background-color-alt);
   border: 1px solid var(--secondary-color);
 }
+html body header nav .menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: var(--text-color);
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  html body header nav ul.menu {
+    display: none;
+    flex-direction: column;
+    background: var(--primary-color);
+    position: absolute;
+    top: var(--header-height);
+    right: 0;
+    width: 100%;
+    padding: 10px 0;
+  }
+  html body header nav .menu-item {
+    text-align: center;
+    padding: 10px 0;
+  }
+  html body header nav .section-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  html body header nav .menu-toggle {
+    font-size: 3rem;
+    display: block;
+    padding: 0;
+  }
+  html body header nav ul.menu.active {
+    display: flex;
+  }
+}
 html body main {
   min-height: 80vh;
   padding: 20px;
@@ -145,21 +187,35 @@ html body main section .section-list ul li div {
   justify-content: center;
   gap: 10px;
 }
-html body .flex-center {
+html body main .flex-center {
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 20px 0;
   flex-direction: column;
 }
-html body .flex-center .section-list-item {
+html body main .flex-center .section-list-item {
   padding: 15px;
   display: flex;
   align-items: center;
   list-style: none;
   gap: 5px;
 }
-html body i img {
+@media (max-width: 768px) {
+  html body main {
+    padding: 10px;
+    margin: 0 5vw;
+  }
+  html body main i img {
+    background: var(--text-color);
+    padding: 0.15rem;
+    margin: 0;
+    border-radius: 1vw;
+    width: 7vw;
+    min-width: 30px;
+  }
+}
+html body main i img {
   background: var(--text-color);
   padding: 0.2rem;
   margin: 0;
@@ -177,58 +233,7 @@ html body footer {
   justify-content: center;
   justify-items: center;
   padding: 10px 0;
-}
-html .menu-toggle {
-  display: none;
-  background: none;
-  border: none;
-  font-size: 2rem;
-  color: var(--text-color);
-  cursor: pointer;
-}
-
-@media (max-width: 768px) {
-  html body {
-    font-size: 1.15rem;
-  }
-  html body header nav ul.menu {
-    display: none;
-    flex-direction: column;
-    background: var(--primary-color);
-    position: absolute;
-    top: var(--header-height);
-    right: 0;
-    width: 100%;
-    padding: 10px 0;
-  }
-  html body header nav .menu-item {
-    text-align: center;
-    padding: 10px 0;
-  }
-  html body header nav .section-list {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-  }
-  html body header nav .menu-toggle {
-    font-size: 3rem;
-    display: block;
-    padding: 0;
-  }
-  html body header nav ul.menu.active {
-    display: flex;
-  }
-  html body main {
-    padding: 10px;
-    margin: 0 5vw;
-  }
-  html body main i img {
-    background: var(--text-color);
-    padding: 0.15rem;
-    margin: 0;
-    border-radius: 1vw;
-    width: 7vw;
-  }
+  gap: 10px;
 }
 
 /*# sourceMappingURL=styles.css.map */
