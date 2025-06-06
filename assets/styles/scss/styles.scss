@@ -48,7 +48,7 @@ background-color: var(--background-color-alt);
         );
         line-height: 1.6;
         min-height: 100vh;
-        transition: 0.2s ease;
+        transition-duration: 500ms;
 
         @media (max-width: 768px) {
                     font-size: 1.15rem;
@@ -200,15 +200,18 @@ background-color: var(--background-color-alt);
                         gap: 10px;
                         
                         li {
-                            padding: 15px;
+                            padding: 10px;
                             display: flex;
                             flex-grow: 1;
-                            align-items: center;
                             list-style: none;
                             gap: 10px;
                             border-radius: 8px;
                             border: 1px solid var(--secondary-color);
                             background-color: var(--background-color-alt);
+                            align-items: center;
+                            justify-content: center;
+                            transition-duration: 300ms;
+                            transition-timing-function: ease-out;
                             
                             div {
                                 display: flex;
@@ -216,6 +219,16 @@ background-color: var(--background-color-alt);
                                 justify-content: center;
                                 gap: 10px;
                             }
+
+                            a {
+                                color: var(--text-color);
+                            }
+                        }
+
+                        li:hover{
+                            padding: 10px 15px;
+                            border: 1px solid var(--background-color-alt);
+                            background-color: var(--primary-color)
                         }
                     }
                 }
