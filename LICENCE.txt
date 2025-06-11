@@ -1,0 +1,13 @@
+LICENÇA DE USO E DISTRIBUIÇÃO
+
+A logo e marca "Alfa Informática" são marcas registradas e pertencem aos seus respectivos detentores. Todos os direitos e uso dessas marcas está sujeito às permissões dos proprietários.
+
+Algumas logosmarcas, ícones, marcas e nomes usados no conteúdos deste site são propriedade intelectual de seus respectivos detentores.
+
+O layout e a estilização deste site foram desenvolvidos por André Augusto (Andre-Su) e são disponibilizados como código aberto. 
+
+A quem se se utilizar desta licença, é permitido copiar, redistribuir, modificar e estudar este material, desde que qualquer redistribuição ou trabalho derivado seja licenciado sob os mesmos termos desta licença.
+
+Esta licença não concede nenhum direito sobre as marcas registradas mencionadas acima.
+
+Copyright (c) 2025 - Andre Augusto
